@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Secret</title>
+
+  <!-- Load CSS file from static folder -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <h2>Enter Secret Key</h2>
+
+  <!-- Input box where user types secret key -->
+  <input id="secretInput" placeholder="Enter secret key">
+
+  <!-- Button that triggers redirect -->
+  <button id="goBtn">Go</button>
+
+  <!-- Load JavaScript file -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
